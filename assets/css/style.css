@@ -310,8 +310,8 @@ body {
   max-width: 1170px;
 }
 @media screen and (max-width: 575px) {
-  .container {
-    padding: 10px 15px;
+  .header-bottom .container {
+    padding: 0px 15px;
   }
 }
 
@@ -460,6 +460,12 @@ header .small-menu {
   header .header-top .col-det .ulright {
     float: none !important;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header-top .col-det .ulright li{
+    padding: 0px 5px;
   }
 }
 
@@ -675,6 +681,7 @@ header .nav-col .navbad .dropdown li a {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    margin-top: -80px;
   }
 
   #hero h2 {
@@ -1237,14 +1244,10 @@ header .nav-col .navbad .dropdown li a {
 /* ===================================== Fooer CSS ================================== */
 .footer {
 
-  background-color: #1e2436;
-  color: #fff;
 }
 
 @media screen and (max-width: 940px) {
-  .footer {
-    padding: 30px 10px;
-  }
+  
 }
 .footer h2 {
   font-size: 26px;
@@ -1450,5 +1453,14 @@ header .nav-col .navbad .dropdown li a {
 .gallery_product {
   margin-bottom: 30px;
 }
-
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #00640070 !important;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
 /*# sourceMappingURL=style.css.map */
